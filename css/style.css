@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  line-height: 31px;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 31px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #00945f;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* navbar code----------------------------------------------------------------------------strats here */
+nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+nav img {
+  height: 35px;
+}
+
+/* navbar css ------------------------------------------------------------------------------ends here */
+
+/* hero css section----------------------------------------------------------------------Starts here  */
+.hero-main {
+  position: relative;
+  width: 100%;
+  height: 449px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  background-color: #fff;
+}
+
+.hero-main .hero-image {
+  background-image: url("/images/hero-banner.jpg");
+  width: 100%;
+}
+
+.hero-main .hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #00945f;
+  /* Adjust green tone */
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* hero css section -----------------------------------------------------------------------Ends here  */
+
+/* career css section--------------------------------------------------------------------starts here  */
+.career {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.career h2 {
+  position: relative;
+  text-align: center;
+}
+
+.career h2::after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  left: 46%;
+  height: 2px;
+  background-color: #00945f;
+  top: 60px;
+}
+
+.career-text {
+  width: 100%;
+  color: #888888;
+}
+
+.career-text p {
+  text-align: left;
+}
+
+.career .btn {
+  background-color: #e97300;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* career css section--------------------------------------------------------------------ends here  */
+
+/* advantage css section--------------------------------------------------------------------starts here  */
+.advantage {
+  padding: 40px 10%;
+}
+
+.advantage h2 {
+  position: relative;
+  text-align: center;
+  color: #00945f;
+}
+
+.advantage h2::after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  left: 46%;
+  height: 2px;
+  background-color: #00945f;
+  top: 60px;
+}
+
+.features {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+  gap: 100px 50px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  position: relative;
+  padding: 0 25px;
+}
+
+.feature-box h3 {
+  color: #00945f;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: #888888;
+  font-size: 16px;
+}
+
+.feature-box a {
+  text-decoration: none;
+  color: #759b24;
+}
+
+.features .feature-box:nth-child(odd)::after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  right: -25px;
+  height: 190px;
+  background-color: #c0c0c0;
+
+}
+
+/* advantage css section--------------------------------------------------------------------ends here  */
+
+/* bank css section--------------------------------------------------------------------starts here  */
+.bank-section {
+  margin: 40px 10%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bank-header {
+  background-color: #00945f;
+  color: #fff;
+  padding: 15px;
+
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.bank-content {
+  background-color: #ebf7f5;
+  padding: 20px 60px;
+  color: #888888;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* bank css section--------------------------------------------------------------------ends here  */
+
+/* testimonials css section--------------------------------------------------------------------starts here  */
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 10%;
+  background: #f9f9f9;
+}
+
+.testimonial {
+  max-width: 300px;
+  margin: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.testimonial p {
+  color: #666666;
+  font-size: 14px;
+  background-image: url("/images/qts.png");
+  background-repeat: no-repeat;
+}
+
+.testimoners-name {
+  color: #00945f;
+}
+
+/* testimonials css section--------------------------------------------------------------------Ends here  */
+
+/* footer css section--------------------------------------------------------------------starts here  */
+.footer {
+  background: #fff;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 2px solid #00945f;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+
+}
+
+.social-links {
+  margin-bottom: 40px;
+}
+
+.social-icons li {
+  list-style: none;
+  height: 30px;
+  padding: 0%;
+  margin-right: 10px;
+}
+
+.social-icons li a img {
+  height: 100%;
+}
+
+.footer-content {
+  color: #666666;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+/* footer css section--------------------------------------------------------------------ends here  */

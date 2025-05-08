@@ -1,0 +1,108 @@
+// =================== MEDIA QUERIES ===================
+
+// Small devices (phones)
+@media (max-width: 480px)
+h2
+    font-size: 27px
+    margin-bottom: 60px
+    color: $primary-green
+
+.career h2::after
+    left: 30%
+
+.advantage h2::after
+    left: 30%
+    top: 80px
+
+nav
+    height: 60px
+
+    img
+        height: 20px
+        margin: 0 auto
+
+.hero-main
+    height: 300px
+
+    .hero-overlay
+        display: none
+
+    .hero-image
+        background-size: cover
+
+.features
+    grid-template-columns: repeat(auto-fit, minmax(299px, 2fr))
+    gap: 25px 50px
+    margin: 0 auto
+
+    .feature-box
+        padding: 0 0 20px
+        border-bottom: 1px solid #c0c0c0
+
+    &:nth-child(odd)::after
+        display: none
+
+    &:last-child
+        border: none
+
+.bank-section
+    margin: 10px 5%
+
+    .bank-content
+        padding: 20px
+
+    .bank-header
+        font-size: 22px
+
+// Medium devices (tablets)
+@media (min-width: 481px) and (max-width: 768px)
+h2
+    font-size: 27px
+    margin-bottom: 60px
+    color: $primary-green
+
+.career h2::after
+    left: 40%
+
+.advantage h2::after
+    left: 40%
+
+.hero-main .hero-overlay
+    display: none
+
+.features
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr))
+    gap: 25px 50px
+    margin: 0 auto
+
+    .feature-box
+        padding: 0 0 20px
+        border-bottom: 1px solid #c0c0c0
+
+    &:nth-child(odd)::after
+        display: none
+
+    &:last-child
+        border: none
+
+// Large devices (laptops)
+@media (min-width: 769px) and (max-width: 1080px)
+.features
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr))
+    gap: 25px 50px
+    margin: 0 auto
+
+    .feature-box
+        padding: 0 0 20px
+        border-bottom: 1px solid #c0c0c0
+
+    &:nth-child(odd)::after
+        display: none
+
+    &:last-child
+        border: none
+
+// Extra large devices (desktops)
+@media (min-width: 1200px)
+.advantage h2
+    margin-bottom: 70px
